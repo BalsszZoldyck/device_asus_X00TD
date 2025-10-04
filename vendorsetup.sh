@@ -7,7 +7,7 @@ git clone --depth=1 --recursive https://github.com/BalsszZoldyck/android_kernel_
 
 # Clone Common tree
 rm -rf device/asus/sdm660-common
-git clone --depth=1 https://github.com/strongreasons/device_asus_sdm660-common -b 16 device/asus/sdm660-common
+git clone --depth=1 https://github.com/BalsszZoldyck/device_asus_sdm660-common -b epos device/asus/sdm660-common
 
 # Clone device sepolicy
 rm -rf device/qcom/sepolicy-legacy-um
@@ -15,7 +15,7 @@ git clone --depth=1 https://github.com/Tiktodz/device_qcom_sepolicy-legacy-um de
 
 # Clone Vendor tree
 rm -rf vendor/asus
-git clone --depth=1 https://github.com/BalsszZoldyck/device_asus_sdm660-common -b epos vendor/asus
+git clone --depth=1  -b 16 vendor/asus
 
 # sign keys
 rm -rf vendor/lineage-priv
