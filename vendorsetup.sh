@@ -15,11 +15,11 @@ git clone --depth=1 https://github.com/Tiktodz/device_qcom_sepolicy-legacy-um de
 
 # Clone Vendor tree
 rm -rf vendor/asus
-git clone --depth=1 https://github.com/BalsszZoldyck/proprietary_vendor_asus -b 16 vendor/asus
+git clone --depth=1 https://github.com/BalsszZoldyck/device_asus_sdm660-common -b epos vendor/asus
 
-#Sign-Key
-rm -rf vendor/lineage-priv/keys
-mkdir -p vendor/lineage-priv/keys
-git clone https://github.com/electrolaboratory/public-keys vendor/lineage-priv/keys/
+# sign keys
+rm -rf vendor/lineage-priv
+git clone https://github.com/ardia-kun/vendor -b 14-backup vlp && cp -R vlp/* vendor/ && rm -rf vlp
 
+export BUILD_USERNAME=Bee Zoldcyk
 export TZ=Asia/Jakarta
