@@ -16,16 +16,16 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Inherit some common device props
-# Matrixx Flags
+#Lunaris flags
 WITH_GMS := false
-WITH_GMS_COMMS_SUITE := false
-TARGET_SUPPORTS_GOOGLE_RECORDER := false
-TARGET_SUPPORTS_WALLEFFECT := false
-TARGET_INCLUDE_STOCK_ARCORE := false
-TARGET_INCLUDE_STOCK_AICORE := false
-BYPASS_CHARGE_SUPPORTED  := false
+WITH_BCR := false
+TARGET_CUSTOM_UDFPS := false
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_ENABLE_BLUR := true
+TARGET_DISABLE_EPPE := true
+FULL_SYSTEM_OPTIMIZE_JAVA := true
+TARGET_BUILD_DEVICE_AS_WEBCAM := true
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_X00TD
