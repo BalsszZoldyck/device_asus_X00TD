@@ -18,10 +18,7 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 
 # Inherit some common device props
-AXION_MAINTAINER := BllsszzXD
-AXION_PROCESSOR := Snapdragon_8s_Gen_Elite
-AXION_CAMERA_REAR_INFO := 13,5
-AXION_CAMERA_FRONT_INFO := 8
+LINEAGE_MAINTAINER := BllsszzXD
 TARGET_DISABLE_EPPE := true
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_BOOT_ANIMATION_RES := 1080
