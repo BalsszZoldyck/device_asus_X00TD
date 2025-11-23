@@ -22,6 +22,12 @@ DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 # Kernel
 TARGET_KERNEL_CONFIG := asus/X00TD_defconfig
 
+# Kernel headers generation
+BOARD_KERNEL_BUILD_HEADERS := true
+TARGET_KERNEL_HEADERS := out/target/product/$(PRODUCT_DEVICE)/obj/KERNEL_OBJ/usr/include
+TARGET_NEEDS_KERNEL_HEADERS := true
+TARGET_KERNEL_CLANG_COMPILE := true
+
 # Power
 TARGET_TAP_TO_WAKE_NODE := "/proc/tpd_gesture"
 
