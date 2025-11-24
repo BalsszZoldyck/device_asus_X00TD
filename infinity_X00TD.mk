@@ -16,7 +16,7 @@ $(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Inherit some common device props
-INFINITY_BUILD_TYPE := Spesial build
+INFINITY_BUILD_TYPE := Private build
 INFINITY_MAINTAINER := BllsszzXD
 FULL_SYSTEM_OPTIMIZE_JAVA := true
 SYSTEM_OPTIMIZE_JAVA := true
