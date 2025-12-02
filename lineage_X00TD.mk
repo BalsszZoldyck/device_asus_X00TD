@@ -17,6 +17,7 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Inherit some common device props
 #Lunaris flags
+LUNARIS_BUILD_TYPE := UNOFFICIAL
 WITH_GMS := false
 WITH_BCR := false
 TARGET_CUSTOM_UDFPS := false
