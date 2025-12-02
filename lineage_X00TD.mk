@@ -15,20 +15,17 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit from X00TD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-
-
 # Inherit some common device props
-LINEAGE_MAINTAINER := BllsszzXD
 TARGET_DISABLE_EPPE := true
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_BOOT_ANIMATION_RES := 1080
-WITH_GMS := false
 FULL_SYSTEM_OPTIMIZE_JAVA := true
 TARGET_BUILD_DEVICE_AS_WEBCAM := true
 TARGET_ENABLE_BLUR := false
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_EXCLUDES_AUDIOFX := false
 TARGET_HAS_UDFPS := false
+WITH_GMS := false
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_X00TD
