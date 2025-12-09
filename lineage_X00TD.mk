@@ -16,15 +16,16 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Inherit some common device props
-#Lunaris flags
-LUNARIS_BUILD_TYPE := UNOFFICIAL
+# Maintainer username
+HORIZON_MAINTAINER := BllsszzXD
+TARGET_FACE_UNLOCK_SUPPORTED := true
 WITH_GMS := false
-WITH_BCR := false
-TARGET_CUSTOM_UDFPS := false
+TARGET_INCLUDE_MATLOG := true
+TARGET_INCLUDE_ACCORD := false
+TARGET_PREBUILT_BCR := false
+PRODUCT_NO_CAMERA := true
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_ENABLE_BLUR := true
-TARGET_DISABLE_EPPE := true
 FULL_SYSTEM_OPTIMIZE_JAVA := true
 TARGET_BUILD_DEVICE_AS_WEBCAM := true
 
