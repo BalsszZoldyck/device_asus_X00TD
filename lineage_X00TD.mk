@@ -29,7 +29,7 @@ TARGET_ENABLE_BLUR := true
 
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := infinity_X00TD
+PRODUCT_NAME := lineage_X00TD
 PRODUCT_DEVICE := X00TD
 PRODUCT_BRAND := asus
 PRODUCT_MODEL := Zenfone Max Pro M1
