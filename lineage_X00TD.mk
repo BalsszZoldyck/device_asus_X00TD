@@ -12,20 +12,20 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 # Inherit some common crDroid stuff
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# crDroid
+WITH_GMS := false
+TARGET_DISABLE_MATLOG := true
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_BOOT_ANIMATION_RES := 1080
+
 # Inherit from X00TD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Inherit some common device props
-TARGET_DISABLE_EPPE := true
-TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_BOOT_ANIMATION_RES := 1080
 FULL_SYSTEM_OPTIMIZE_JAVA := true
-TARGET_BUILD_DEVICE_AS_WEBCAM := true
-TARGET_ENABLE_BLUR := false
-TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_EXCLUDES_AUDIOFX := false
-TARGET_HAS_UDFPS := false
-WITH_GMS := false
+SYSTEM_OPTIMIZE_JAVA := true
+SYSTEMUI_OPTIMIZE_JAVA := true
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_X00TD
