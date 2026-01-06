@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aicp_X00TD.mk
+    $(LOCAL_DIR)/superior_X00TD.mk
